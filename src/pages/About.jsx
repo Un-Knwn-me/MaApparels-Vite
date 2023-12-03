@@ -11,8 +11,8 @@ import clientMob from '../assets/images/clientMob.svg';
 
 const About = () => {
   return (
-    <div className="w-full bg-pink-100">
-    <div className="p-5 md:p-20 subpixel-antialiased font-popins">
+    <>
+    <div className="m-5 md:m-20 subpixel-antialiased font-popins">
     <div className="text-center">
       <p className='text-3xl text-gray-700 font-bold'>ABOUT US</p>
     </div>
@@ -228,7 +228,7 @@ const About = () => {
 </div>
 
     </div>
-    </div>
+    </>
   )
 }
 
