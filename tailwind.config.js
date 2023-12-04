@@ -12,7 +12,9 @@ module.exports = withMT({
       },
       colors: {
         brand: "#F40B4B",
-        brandBlue: '#0D003F'
+        brandBlue: '#0D003F',
+        footerbg: '#1F294F',
+        footerText: '#FFF5E3'
       }
     },
   },

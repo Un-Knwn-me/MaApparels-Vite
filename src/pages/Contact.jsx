@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Base from '../components/Base';
 import { Box, Button, Container, Fab, Grid, Paper, TextField, Typography } from '@mui/material';
 import emailjs from '@emailjs/browser';
@@ -112,7 +112,7 @@ const Contact = () => {
                 <TextField required variant="outlined" name="message" label="Your Message" multiline sx={{ backgroundColor: '#EBF5FA' }} fullWidth rows={6} />
               </Grid>
               <Grid item xs={12}>
-              <ReCAPTCHA class="g-recaptcha" sitekey="6LfJa_gnAAAAAFc70MGXPmQTFA9SyfIVA_XkD_bM" onChange={onChange} />
+              <ReCAPTCHA className="g-recaptcha" sitekey="6LfJa_gnAAAAAFc70MGXPmQTFA9SyfIVA_XkD_bM" onChange={onChange} />
               </Grid>
               <Grid item xs={12}>
                 <Button type="submit" value="Send" variant="contained" disabled={!verified} sx={{ backgroundColor: '#F5B653', '&:hover': { backgroundColor: '#F5B653' }, justifyContent: 'center', alignItem: 'center' }} fullWidth>
@@ -231,8 +231,8 @@ const Contact = () => {
       </Grid>
     </Box>
     </Paper>
-  </Grid>  
-    
+  </Grid>
+
   </Grid>
 </Container>
 
