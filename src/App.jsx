@@ -1,13 +1,18 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-// import About from './pages/About.jsx'
 import Csr from './pages/Csr.jsx'
+import About from './pages/About.jsx'
 
 function App() {
 
   return (
-    <>
-  <Csr/>
-    </>
+    <Routes>
+
+    <Route exact path='/' element={<About />} />
+
+    <Route exact path='/csr' element={<Csr />} />
+
+    </Routes>
   )
 }
 
