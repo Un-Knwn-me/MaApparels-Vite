@@ -1,19 +1,14 @@
-import React from 'react'
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
+import { Navbar, MobileNav, Typography, IconButton, } from "@material-tailwind/react";
 import logo from '../assets/MA-1.png';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 const Base = ({title, description, children}) => {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = useState(false);
  
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false),
@@ -25,61 +20,93 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Pages
-        </a>
+        <Link to="/" className="flex items-center">
+          Home
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Account
-        </a>
+        <Link to="/women/casual" className="flex items-center">
+          Women
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
+        <Link to="/men" className="flex items-center">
+          Men
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
+        <Link to="/kids/girls" className="flex items-center">
+          Kids
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        className="p-1 font-normal"
+      >
+        <Link to="/infants" className="flex items-center">
+          Infant
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        className="p-1 font-normal"
+      >
+        <Link to="/about" className="flex items-center">
+          About
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        className="p-1 font-normal"
+      >
+        <Link to="/csr" className="flex items-center">
+          CSR
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        className="p-1 font-normal"
+      >
+        <Link to="/contact" className="flex items-center">
+          Contact us
+        </Link>
       </Typography>
     </ul>
   );
 
   return (
     <div>
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-between text-blue-gray-900">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-8">
+        <div className="flex items-center justify-between text-blue-gray-900 px-4">
           <div>
+            <Link to='/'>
           <img
               src={logo}
               alt="MA Apparels"
-              // onClick={home}
-              style={{ width: '80%', maxWidth: '100%' }}
+              style={{ width: '70%', maxWidth: '80%' }}
             />
+            </Link>
           </div>
           <div className="flex items-center gap-4">
-            <div className="mr-4 hidden lg:block">{navList}</div>
-            <div className="flex items-center gap-x-4 text-brand">
+            <div className="md:flex items-center gap-x-4 text-brand hidden">
             <Typography variant="small" component="span" sx={{ color: '#F40B4B' }}>
                 <ForwardToInboxIcon sx={{ mr: 1, fontSize: '16px' }}/>
                   mohan@maapparels.com
@@ -127,16 +154,14 @@ const Base = ({title, description, children}) => {
             </IconButton>
           </div>
         </div>
+        
+        <div className="my-2 h-3 bg-brand -mx-10 hidden md:block" />
+        <div className="-mt-1 -mb-5 h-7 bg-brandBlue -mx-10 hidden md:flex flex-wrap items-center justify-center">
+        <div className="hidden text-white lg:block">{navList}</div>
+        </div>
+
         <MobileNav open={openNav}>
-          {navList}
-          <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
-            </Button>
-          </div>
+          <div className="flex text-center text-black">{navList}</div>
         </MobileNav>
       </Navbar>
       <div className="mx-auto max-w-screen">

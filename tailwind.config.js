@@ -11,7 +11,8 @@ module.exports = withMT({
         popins: ['Poppins', 'sans-serif']
       },
       colors: {
-        brand: "#F40B4B"
+        brand: "#F40B4B",
+        brandBlue: '#0D003F'
       }
     },
   },

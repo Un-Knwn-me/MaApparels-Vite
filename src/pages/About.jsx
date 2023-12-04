@@ -20,36 +20,36 @@ const About = () => {
         <Grid sx={{ mt:-3, mb: 2 }} item xs={12} md={12} lg={12}>
         <Typography style={{ fontWeight: 'bold', fontSize: '30px', justifyContent: 'center', display: 'flex', color: '#2F4858' }} variant='bullet'>ABOUT US</Typography>
         </Grid>
-        <Grid item xs={12} md={5} lg={5}>
-        <Card sx={{ maxWidth: '100%' }}>
+        <Grid item xs={12} md={5} lg={5} sx={{ mt:2 }}>
+        <Card sx={{ maxWidth: '100%', mt: 2, ml: 1 }}>
         <CardMedia
           component="img"
-          height="480"
           image={intro}
-          alt="Ma Apparel"
+          alt="Ma Apparels"
         />
     </Card>
         </Grid>
 
-        <Grid item xs={12} md={7} lg={7} sx={{ mt: 4 }}>
-            <Typography variant='body2' style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
-                We offer an exclusive range of knitted garments, kids knitted garments, ladies knitted garments and men's knitted garments. The garments are made from superior quality materials and are very durable. We are always abreast with the latest fashion trends and thus we are the first choice when it comes to fashion and good quality.
-            </Typography>
-            <Typography variant='body2' sx={{ mt: 3 }} style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
-                Incepted in the year 1995, we "MA Apparels", are a highly acclaimed name in the knitted garment industry. Our valuable industry experience as well as availability of technically advanced machinery equipment has helped us to deliver an exquisite range of knitted garments that are known for their styles, colors and innovative patterns.
-            </Typography>
-            <Typography variant='body2' sx={{ mt: 3 }} style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
-            Our company valuable industry experience has assisted us in successfully delivering garment products as per the varied demands and needs of our clients. The wide ranges of Profile knitted garments offered by us meets the dressing requirements of kids, ladies and gents and are available in varied sizes, patterns and colors.
-            </Typography>
-            <Typography variant='body2' sx={{ mt: 3 }} style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
-            Further our expertise and the determined approach of our team enables us to successfully meet the targets of both the bulk and well as small order requirements. Our efficient handling of the entire operations ensures that the orders are delivered promptly with no complaints on the quality, style or quantity fronts.
-            </Typography>
-        </Grid>
+        <Grid item xs={12} md={7} lg={7} sx={{ mt: 2 }}>
+  <Typography variant='body2' style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
+    We offer an exclusive range of knitted garments, kids knitted garments, ladies knitted garments, and men's knitted garments. The garments are made from superior quality materials and are very durable. We are always abreast with the latest fashion trends and thus we are the first choice when it comes to fashion and good quality.
+  </Typography>
+  <Typography variant='body2' sx={{ mt: 3 }} style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
+    Incepted in the year 1995, we "MA Apparels", are a highly acclaimed name in the knitted garment industry. Our valuable industry experience as well as availability of technically advanced machinery equipment has helped us to deliver an exquisite range of knitted garments that are known for their styles, colors, and innovative patterns.
+  </Typography>
+  <Typography variant='body2' sx={{ mt: 3 }} style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
+    Our company valuable industry experience has assisted us in successfully delivering garment products as per the varied demands and needs of our clients. The wide ranges of Profile knitted garments offered by us meets the dressing requirements of kids, ladies, and gents and are available in varied sizes, patterns, and colors.
+  </Typography>
+  <Typography variant='body2' sx={{ mt: 3 }} style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
+    Further our expertise and the determined approach of our team enable us to successfully meet the targets of both the bulk and well as small order requirements. Our efficient handling of the entire operations ensures that the orders are delivered promptly with no complaints on the quality, style, or quantity fronts.
+  </Typography>
+</Grid>
 
-        <Grid item xs={12} md={12} lg={12} sx={{ mt: 4 }}>
+
+        <Grid item xs={12} md={12} lg={12} sx={{ mt: 3 }}>
         <Typography style={{ fontWeight: 'bold', fontSize: '30px', justifyContent: 'center', display: 'flex', color: '#2F4858' }} variant='bullet'>QUALITY</Typography>
         </Grid>
-        <Grid item xs={12} md={7} lg={7} sx={{ mt: 3 }}>
+        <Grid item xs={12} md={7} lg={7} sx={{ mt: 1 }}>
           <Typography variant='body2' style={{ fontSize: '14px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
           Our products are made up of 100% viscose, 100% cotton, cotton elasthan, polyester, Modal and various other fabrics that come in different blends and combinations.
           The raw material for our garment products are procured from Tirupur City, which is a hub for manufacturing garments. This close proximity with the industry helps us in having a better understanding of the markets and incorporating in our products the desired changes as required by our clients.
@@ -75,10 +75,9 @@ const About = () => {
         </Grid>
 
         <Grid item xs={12} md={5} lg={5}>
-        <Card sx={{ maxWidth: '100%', mt: 5, ml: 1 }}>
+        <Card sx={{ maxWidth: '100%', mt: 2, ml: 1 }}>
         <CardMedia
           component="img"
-          height="480"
           image={quality}
           alt="Quality"
         />
@@ -90,49 +89,57 @@ const About = () => {
         <Typography style={{ fontWeight: 'bold', fontSize: '30px', justifyContent: 'center', display: 'flex', color: '#2F4858' }} variant='bullet'>CERTIFICATIONS</Typography>
     </Grid>
 
-    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-0 md:mx-40">
-  <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
-    <img
-      src={wdc}
-      alt="Ma Apparels"
-      height={64}
-      width={128}
-    />
-  </div>
-  <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
-    <img
-      src={bsci}
-      alt="Ma Apparels"
-      height={64}
-      width={128}
-    />
-  </div>
-  <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
-    <img
-      src={sedex}
-      alt="Ma Apparels"
-      height={90}
-      width={90}
-    />
-  </div>
-  <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
-    <img
-      src={uni}
-      alt="Ma Apparels"
-      height={64}
-      width={128}
-    />
-  </div>
-</div> 
+    <Grid item xs={12} md={12} lg={12} sx={{ mx: { xs: 0, md: 15 } }} >
+    <Grid container spacing={3}>
+
+<Grid item xs={6} sm={4} md={3} lg={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+     <Box elevation={0} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+  <img
+    src={wdc}
+    alt='Certificate'
+    style={{ maxWidth: '50%', height: 'auto', display: 'flex' }}
+  />
+</Box>
+      </Grid>
+      <Grid item xs={6} sm={4} md={3} lg={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+     <Box elevation={0} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+  <img
+    src={bsci}
+    alt='Certificate'
+    style={{ maxWidth: '50%', height: 'auto', display: 'flex' }}
+  />
+</Box>
+      </Grid>
+      <Grid item xs={6} sm={4} md={3} lg={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+     <Box elevation={0} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+  <img
+    src={sedex}
+    alt='Certificate'
+    style={{ maxWidth: '40%', height: 'auto', display: 'flex' }}
+  />
+</Box>
+      </Grid>
+      <Grid item xs={6} sm={4} md={3} lg={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+     <Box elevation={0} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+  <img
+    src={uni}
+    alt='Certificate'
+    style={{ maxWidth: '50%', height: 'auto', display: 'flex' }}
+  />
+</Box>
+      </Grid>
+
+          </Grid>
+    </Grid>
 
 
 {/* Infrastructure */}
-        <Grid item xs={12} md={12} lg={12} >
+        <Grid item xs={12} md={12} lg={12} sx={{ mt: 4 }}>
         <Typography style={{ fontWeight: 'bold', fontSize: '30px', justifyContent: 'center', display: 'flex', color: '#2F4858' }} variant='bullet'>INFRASTRUCTURE</Typography>
         </Grid>
 
         <Grid item xs={12} md={5} lg={5}>
-        <Card sx={{ maxWidth: '100%', mt: 5 }}>
+        <Card sx={{ maxWidth: '100%', mt: 2 }}>
         <CardMedia
           component="img"
           height="480"
@@ -193,15 +200,15 @@ we meet the demanding requirements of the garments industry. We manufacture & su
 extensive range of hi-fashion knitted garments for men, women & kids. Our products range
 encompasses the following varieties.
         </Typography>
-        <Typography variant='body2' style={{ fontWeight: 'bold', fontSize: '15px', display: 'flex', color: '#F40B4B' }} sx={{ mt: 2 }}>
+        <Typography variant='body2' style={{ fontWeight: 'bold', fontSize: '15px', display: 'flex', color: '#F40B4B' }} sx={{ my: 2, }}>
         We offer to our clients wide range of finely finished knitted garments including:
         </Typography>
 
         </Grid>
 
-        <Grid item xs={12} md={4} lg={4} sx={{ mt: -3 }}>
-        <Typography component="div" variant='body2' style={{ fontSize: '14px', justifyContent: 'left', display: 'flex', color: '#2F4858' }}>
-      <ul>
+        <Grid item xs={12} md={4} lg={4} sx={{ mt: -3, }}>
+        <Typography component="div" variant='body2' style={{ fontSize: '14px', justifyContent: 'left', display: 'flex', color: '#2F4858' }} sx={{ ml:2 }}>
+      <ul className='list-disc'>
         <li>Baby Rompers</li>
         <li>Kids Wear</li>
         <li>Boys T-Shirts</li>
@@ -211,8 +218,8 @@ encompasses the following varieties.
     </Grid>
 
     <Grid item xs={12} md={4} lg={4} sx={{ mt: -3 }}>
-        <Typography component="div" variant='body2' style={{ fontSize: '14px', justifyContent: 'left', display: 'flex', color: '#2F4858' }}>
-      <ul>
+        <Typography component="div" variant='body2' sx={{ ml:2 }} style={{ fontSize: '14px', justifyContent: 'left', display: 'flex', color: '#2F4858' }}>
+      <ul className='list-disc'>
         <li>Ladies Tops</li>
         <li>Ladies T-Shirts</li>
         <li>Ladies Polo Shirts</li>
@@ -222,8 +229,8 @@ encompasses the following varieties.
     </Grid>
 
     <Grid item xs={12} md={4} lg={4} sx={{ mt: -3 }}>
-        <Typography component="div" variant='body2' style={{ fontSize: '14px', justifyContent: 'left', display: 'flex', color: '#2F4858' }}>
-      <ul>
+        <Typography component="div" variant='body2' sx={{ ml:2 }} style={{ fontSize: '14px', justifyContent: 'left', display: 'flex', color: '#2F4858' }}>
+      <ul className='list-disc'>
         <li>Men's T-Shirts</li>
         <li>Men's Polo Shirts</li>
         <li>Men's Shorts</li>
