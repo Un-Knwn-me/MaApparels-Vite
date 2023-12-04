@@ -8,11 +8,13 @@ import sedex from '../assets/images/Certification/sedex.png';
 import uni from '../assets/images/Certification/uni.png';
 import client from '../assets/images/client.svg';
 import clientMob from '../assets/images/clientMob.svg';
+import Base from '../components/Base';
 
 const About = () => {
   return (
-    <>
-    <div className="m-5 md:m-20 subpixel-antialiased font-popins">
+    <Base title={'About'}>
+    <div className="w-full bg-pink-50 subpixel-antialiased font-popins">
+    <div className="p-5 md:p-20">
     <div className="text-center">
       <p className='text-3xl text-gray-700 font-bold'>ABOUT US</p>
     </div>
@@ -20,7 +22,7 @@ const About = () => {
     <div className="grid grid-cols-12 gap-10 mt-10">
       <div className="col-span-12 md:col-span-6">
       <img
-      className="rounded-xl md:h-1080px"
+      className="rounded-xl"
         src={intro}
         alt="Ma Apparels"
         />
@@ -32,10 +34,10 @@ const About = () => {
         <div className="indent-8 mt-6">
         Incepted in the year 1995, we 'MA Apparels', are a highly acclaimed name in the knitted garment industry. Our valuable industry experience as well as availability of technically advanced machinery equipment has helped us to deliver an exquisite range of knitted garments that are known for their styles, colors and innovative patterns.
         </div>
-        <div className="intent-8 mt-6">
+        <div className="indent-8 mt-6">
         Our company valuable industry experience has assisted us in successfully delivering garment products as per the varied demands and needs of our clients. The wide ranges of Profile knitted garments offered by us meets the dressing requirements of kids, ladies and gents and are available in varied sizes, patterns and colors.
         </div>
-        <div className="intent-8 mt-6">
+        <div className="indent-8 mt-6">
         Further our expertise and the determined approach of our team enables us to successfully meet the targets of both the bulk and well as small order requirements. Our efficient handling of the entire operations ensures that the orders are delivered promptly with no complaints on the quality, style or quantity fronts.
         </div>
       </div>
@@ -66,19 +68,19 @@ const About = () => {
       </div>
       <div className="col-span-12 md:col-span-6">
       <img
-      className="rounded-xl md:h-1080px"
+      className="rounded-xl"
         src={quality}
         alt="Ma Apparels"
         />
       </div>
     </div>
 
+{/* certificate */}
     <div className="text-center mt-20 mb-10">
       <p className='text-3xl text-gray-700 font-bold'>CERTIFICATIONS</p>
     </div>
 
-    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-0 md:mx-40">
-  {/* Image 1 */}
+ <div className="flex flex-wrap justify-center items-center gap-6 md:gap-0 md:mx-40">
   <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
     <img
       src={wdc}
@@ -87,8 +89,6 @@ const About = () => {
       width={128}
     />
   </div>
-
-  {/* Image 2 */}
   <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
     <img
       src={bsci}
@@ -97,8 +97,6 @@ const About = () => {
       width={128}
     />
   </div>
-
-  {/* Image 3 */}
   <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
     <img
       src={sedex}
@@ -107,8 +105,6 @@ const About = () => {
       width={90}
     />
   </div>
-
-  {/* Image 4 */}
   <div className="md:w-1/4 w-1/2 md:mb-0 mb-6">
     <img
       src={uni}
@@ -117,7 +113,7 @@ const About = () => {
       width={128}
     />
   </div>
-</div>
+</div> 
 
 {/* Infrastructure */}
     <div className="text-center mt-20 mb-10">
@@ -127,7 +123,7 @@ const About = () => {
     <div className="grid grid-cols-12 gap-10">
       <div className="col-span-12 md:col-span-6">
       <img
-      className="rounded-xl md:h-max"
+      className="rounded-xl"
         src={infra}
         alt="Ma Apparels"
         />
@@ -228,7 +224,8 @@ const About = () => {
 </div>
 
     </div>
-    </>
+    </div>
+    </Base>
   )
 }
 

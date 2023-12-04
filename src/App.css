@@ -1,0 +1,130 @@
+    .heading{
+    background-color: #0BF4B4;;
+  }
+  
+  .client{
+    background-color: #F40B4B;
+  }
+  
+  .menucard{
+    background: linear-gradient(90deg, #F40B4B 4.82%, rgba(244, 11, 75, 0.00) 88.35%);
+    color: rgb(190, 184, 184);
+  }
+  
+  .welcome{
+  color: #F40B4B;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125.023%; /* 30.005px */
+  }
+  
+  .welc{
+    background: rgba(255, 174, 196, 0.22);
+    padding-bottom: 80px;
+  }
+  
+  .corusel{
+      margin-top: -20px;
+  }
+  
+  .swiper-button-next::after {
+    background-color: 'none';   /* Customize the background color */
+    color: #fff;   /* Customize the button text color */
+    border-radius: 50%;   /* Make it round */
+    font-size: 12px;   /* Adjust the font size */
+    padding: 10px 15px; 
+    }
+    
+  .swiper-button-prev::after {
+    background-color: 'none';   /* Customize the background color */
+    color: #fff;   /* Customize the button text color */
+    border-radius: 50%;   /* Make it round */
+    font-size: 12px;   /* Adjust the font size */
+    padding: 10px 15px; 
+    }
+  
+  .explore{
+    background-image: url("/src/assets/images/explore.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; 
+    color: #FFF;
+  }
+  
+  .body{
+      background-color: #FFF;;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: -60px;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  .about {
+    background-image: url('./assets/images/aboutbg.png'), linear-gradient(lightgray 0px 1.36px, #FFF);
+    background-size: 100% 102.097%, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, top center;
+    margin-top: 25px;  
+    padding-bottom: 10px;
+    margin-bottom: -60px;
+  }
+  
+  .icon{
+    background-image: url('./assets/images/aboutbg.png'), linear-gradient(lightgray 0px 1.36px, #FFF);
+    background-size: 100% 102.097%, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, top center;
+    padding: 0 5px;
+  }
+  
+  .product {
+    /* background-image: url('./assets/images/productbg.png'), linear-gradient(white 0px 1.36px, #FFF);
+    background-size: 40% 10%, auto;
+    background-repeat: repeat, repeat;
+    background-position: top center, top center; */
+    margin-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: -60px;
+  }
+  
+  .logopic{
+    background-image: url('./assets/images/aboutbg.png'), linear-gradient(lightgray 0px 1.36px, #FFF);
+    background-size: 100% 102.097%, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, top center;
+    padding: 2;
+  }
+  
+  /* Change the color of pagination bullets */
+  .swiper-pagination-bullet {
+    background-color: rgb(190, 190, 190); 
+  }
+  
+  /* Define the color for the active pagination item */
+  .swiper-pagination-bullet-active {
+    background-color: #0D003F !important;
+  }
+  
+  .cont{
+    padding-left: 5;
+  }
+  
+  .background-image {
+    background-image: url("/src/assets/images/cont.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; 
+    color: #FFF;
+  }
+  
+  .certificate{
+    margin: 0 50px;
+  }
