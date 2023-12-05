@@ -119,6 +119,11 @@ const Base = ({title, description, children}) => {
     </ul>
   );
 
+  const dividerStyle = {
+    borderTop: openNav ? '1px solid #ccc' : 'none',
+    marginTop: openNav ? '1rem' : '0',
+  };
+
   return (
     <div>
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-8">
@@ -188,6 +193,7 @@ const Base = ({title, description, children}) => {
         </div>
 
         <Collapse open={openNav} className='bg-opacity-100'>
+        <div style={dividerStyle}></div>
           <div className="flex justify-center bg-white-100 bg-opacity-50 font-bold text-center text-brandBlue">{navList}</div>
         </Collapse>
       </Navbar>
