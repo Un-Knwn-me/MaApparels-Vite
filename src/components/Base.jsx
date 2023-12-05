@@ -141,7 +141,7 @@ const Base = ({title, description, children}) => {
             <div className="md:flex items-center gap-x-4 text-brand hidden">
             <Typography variant="small" component="span" sx={{ color: '#F40B4B' }}>
                 <ForwardToInboxIcon sx={{ mr: 1, fontSize: '16px' }}/>
-                  mohan@maapparels.com
+                  mohan@maapparels.in
                 </Typography>
                 <Typography variant="small" component="span" sx={{ color: '#F40B4B', fontSize: '14px' }}>
                   <a href='tel:+919943380777' style={{ color: '#F40B4B', textDecoration: 'none' }}> < PhoneInTalkIcon sx={{ mr: 1, fontSize: '16px' }}/> +91 99433 80777</a>

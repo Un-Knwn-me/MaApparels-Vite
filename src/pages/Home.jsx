@@ -13,7 +13,7 @@ import welcome from '../assets/images/welcome.jpg';
 import infra from '../assets/images/infra.jpg';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
-import img1 from '../assets/images/Factory 2x.jpg';
+import img1 from '../assets/images/Factory.jpg';
 import img2 from '../assets/images/Women 2.jpg';
 import img3 from '../assets/images/Boys 2x.jpg';
 import img4 from '../assets/images/Girls 2x.jpg';
