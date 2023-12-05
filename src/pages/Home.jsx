@@ -27,7 +27,7 @@ import wdc from '../assets/images/Certification/WDC.png';
 import bsci from '../assets/images/Certification/bsci-certification-250x250.png';
 import sedex from '../assets/images/Certification/sedex.png';
 import uni from '../assets/images/Certification/uni.png';
-import { Zoom } from 'react-awesome-reveal';
+import { Bounce, Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -147,7 +147,9 @@ const Home = () => {
   
 </Grid>
 
+
         <Grid item xs={12} md={6} lg={6} sx={{ my: 2, }}>
+        <Slide direction="right">
         <Typography style={{ fontWeight: 'bold', fontFamily: 'poppins', fontSize: '32px', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, ml: 3 }} variant='bullet'>Welcome to MA Apparels</Typography>         
         <Typography variant='body2' style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, mt:3, ml: 3 }}>
                 We offer an exclusive range of knitted garments, kids knitted garments, ladies knitted garments and men's knitted garments. The garments are made from superior quality materials and are very durable.
@@ -160,7 +162,9 @@ const Home = () => {
             Read More
           </Button>
   </div>
+  </Slide>
         </Grid>
+
       </Grid>
   </Paper>
 
@@ -171,6 +175,7 @@ const Home = () => {
     </Grid>
 
     <Grid item xs={12} md={12} lg={12} sx={{ mx: { xs: 0, md: 15 } }} >
+    <Fade direction='in'>
     <Grid container spacing={3}>
 
 <Grid item xs={6} sm={4} md={3} lg={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -211,9 +216,11 @@ const Home = () => {
       </Grid>
 
           </Grid>
+    </Fade>
     </Grid>
 
 {/* products */}
+<Zoom animate__zoomInUp>
     <Paper elevation={0} className= 'explore' sx={{ mt: 5, p: 5, mx: -1 }}>
     <Typography style={{ fontWeight: 'bold', fontSize: '28px', justifyContent: 'center', display: 'flex', color: '#FFFFFF', marginBottom: '50px' }} variant='bullet'>EXPLORE</Typography>
       <Grid container spacing={3}>
@@ -351,23 +358,11 @@ const Home = () => {
 
       </Grid>
     </Paper>
+</Zoom>
                   
   {/* Clients */}
   <Typography style={{ fontWeight: 'bold', fontSize: '28px', justifyContent: 'center', display: 'flex', color: '#1F294F', marginTop: '60px', marginBottom: '50px' }} variant='bullet'>OUR CLIENTS</Typography>
-  {/* <Grid container spacing={2}>
-                  {Object.keys(images).map((imageKey, index) => (
-                    <Grid item xs={6} sm={4} md={2} lg={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} key={index}>
-     <Paper elevation={0} sx={{ backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60px', width: '50%' }}>
-  <img
-    src={images[imageKey]}
-    alt='Clients'
-    style={{ maxHeight: '90%', maxWidth: '80%', display: 'flex', }}
-  />
-</Paper>
-      </Grid>
-        ))}
-        </Grid> */}
-
+<Fade direction='up'>
 <Box sx={{ px: 5, display: { xs: 'none', md: 'flex' } }}>
 <img
     src={client} 
@@ -382,6 +377,7 @@ const Home = () => {
     style={{ width: '100%', height: 'auto', }} 
   />
 </Box>
+</Fade>
 </div>
 
 {/* Infrastructure */}
@@ -482,20 +478,24 @@ const Home = () => {
 
 {/* Contact */}
 <Grid item sx={{ m: 4, textAlign: 'center' }} xs={12} md={12} lg={12}>
+      <Bounce animate__bounceOut>
       <Typography variant='h4' style={{ fontFamily: 'poppins', fontSize: '28px' }} sx={{ fontWeight: 'bold', color: '#1F294F' }}>
         Reach out to us!
       </Typography>
+      </Bounce>
       <Link to='/contact'>
       <Button variant="contained" elevation={0} sx={{ backgroundColor: '#F5B653', mt: 3, '&:hover': { backgroundColor: '#F5B653', } }} endIcon={<SendIcon />}>
         Drop us a line
       </Button>
       </Link>
+      <Fade>
       <Typography variant='body2' style={{ fontFamily: 'poppins', fontSize: '14px' }} sx={{ color: '#0D003F', m: 1, mt: 3 }}>
       Ready to start a conversation? 
       </Typography>
       <Typography variant='body2' style={{ fontFamily: 'poppins', fontSize: '14px' }} sx={{ color: '#0D003F', m: 1, my: -1 }}>
       We're just a click away! 
       </Typography>
+      </Fade>
     </Grid>
 
 </div>

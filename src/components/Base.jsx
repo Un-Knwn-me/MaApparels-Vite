@@ -126,7 +126,7 @@ const Base = ({title, description, children}) => {
 
   return (
     <div>
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-8">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-10">
         <div className="flex items-center justify-between text-blue-gray-900 px-4">
           <div>
             <Link to='/'>
