@@ -187,8 +187,8 @@ const Base = ({title, description, children}) => {
         <div className="hidden text-white lg:block">{navList}</div>
         </div>
 
-        <Collapse open={openNav}>
-          <div className="flex text-center text-black">{navList}</div>
+        <Collapse open={openNav} className='bg-opacity-100'>
+          <div className="flex justify-center bg-white-100 bg-opacity-50 font-bold text-center text-brandBlue">{navList}</div>
         </Collapse>
       </Navbar>
       <div className="mx-auto mt-6 max-w-screen">
@@ -198,7 +198,7 @@ const Base = ({title, description, children}) => {
         </main>
 
 {/* <Link to='#' download='MA Apparales'> */}
-        <div className="fixed bottom-20 right-5">
+        <div className="fixed z-10 bottom-20 right-5">
         <SpeedDial placement="right">
           <SpeedDialHandler>
             <IconButton size="lg" className="rounded-full">
@@ -241,6 +241,11 @@ const Base = ({title, description, children}) => {
 ))}
         </div>
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+        <Typography
+            className="mb-4 text-center text-xs font-normal text-footerText md:mb-0"
+          >
+           Webpage Devloped by Un-Knwn
+          </Typography>
           <Typography
             variant="small"
             className="mb-4 text-center font-normal text-footerText md:mb-0"

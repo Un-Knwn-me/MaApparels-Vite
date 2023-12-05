@@ -8,7 +8,7 @@ import Kids from '../assets/images/Girls/10.jpg';
 import women from '../assets/images/Women/044.jpg';
 import mens from '../assets/images/05.jpg';
 import infant from '../assets/images/Infants/09.jpg';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import welcome from '../assets/images/welcome.jpg';
 import infra from '../assets/images/infra.jpg';
 import CountUp from 'react-countup';
@@ -27,6 +27,7 @@ import wdc from '../assets/images/Certification/WDC.png';
 import bsci from '../assets/images/Certification/bsci-certification-250x250.png';
 import sedex from '../assets/images/Certification/sedex.png';
 import uni from '../assets/images/Certification/uni.png';
+import { Zoom } from 'react-awesome-reveal';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -134,6 +135,7 @@ const Home = () => {
   <Paper elevation={0} sx={{ pt: 5, }} className='logopic'>
     <Grid container spacing={3}>
     <Grid item xs={12} md={6} lg={6}>
+<Zoom animate__zoomInUp>
   <Paper elevation={0} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', m: 2 }}>
     <img
       src={welcome}
@@ -141,9 +143,11 @@ const Home = () => {
       style={{ maxHeight: '100%', maxWidth: '100%', display: 'block' }}
     />
   </Paper>
+</Zoom>
+  
 </Grid>
 
-        <Grid item xs={12} md={6} lg={6} sx={{ my: 3, }}>
+        <Grid item xs={12} md={6} lg={6} sx={{ my: 2, }}>
         <Typography style={{ fontWeight: 'bold', fontFamily: 'poppins', fontSize: '32px', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, ml: 3 }} variant='bullet'>Welcome to MA Apparels</Typography>         
         <Typography variant='body2' style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, mt:3, ml: 3 }}>
                 We offer an exclusive range of knitted garments, kids knitted garments, ladies knitted garments and men's knitted garments. The garments are made from superior quality materials and are very durable.
@@ -481,9 +485,11 @@ const Home = () => {
       <Typography variant='h4' style={{ fontFamily: 'poppins', fontSize: '28px' }} sx={{ fontWeight: 'bold', color: '#1F294F' }}>
         Reach out to us!
       </Typography>
-      <Button variant="contained" elevation={0} onClick={()=> navigate('/contactus')} sx={{ backgroundColor: '#F5B653', mt: 3, '&:hover': { backgroundColor: '#F5B653', } }} endIcon={<SendIcon />}>
+      <Link to='/contact'>
+      <Button variant="contained" elevation={0} sx={{ backgroundColor: '#F5B653', mt: 3, '&:hover': { backgroundColor: '#F5B653', } }} endIcon={<SendIcon />}>
         Drop us a line
       </Button>
+      </Link>
       <Typography variant='body2' style={{ fontFamily: 'poppins', fontSize: '14px' }} sx={{ color: '#0D003F', m: 1, mt: 3 }}>
       Ready to start a conversation? 
       </Typography>

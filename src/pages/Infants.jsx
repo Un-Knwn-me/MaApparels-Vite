@@ -11,7 +11,7 @@ const Infants = () => {
 
     useEffect(() => {
       const importImages = async () => {
-        const imageContext = import.meta.glob("../assets/images/Men/*");
+        const imageContext = import.meta.glob("../assets/images/Infants/*");
         const paths = await Promise.all(
           Object.keys(imageContext).map(async (path) => {
             const mod = await imageContext[path]();

@@ -13,7 +13,7 @@ const WomenNightWear = () => {
 
     useEffect(() => {
       const importImages = async () => {
-        const imageContext = import.meta.glob("../assets/images/Women/*");
+        const imageContext = import.meta.glob("../assets/images/WomenNight/*");
         const paths = await Promise.all(
           Object.keys(imageContext).map(async (path) => {
             const mod = await imageContext[path]();
