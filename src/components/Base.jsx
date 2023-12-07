@@ -47,7 +47,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/" className="flex items-center">
           Home
@@ -56,7 +56,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/women/casual" className="flex items-center">
           Women
@@ -65,7 +65,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/men" className="flex items-center">
           Men
@@ -74,7 +74,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/kids/girls" className="flex items-center">
           Kids
@@ -83,7 +83,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/infants" className="flex items-center">
           Infant
@@ -92,7 +92,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/about" className="flex items-center">
           About
@@ -101,7 +101,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/csr" className="flex items-center">
           CSR
@@ -110,7 +110,7 @@ const Base = ({title, description, children}) => {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal"
+        className="hover:opacity-50 p-1 font-normal"
       >
         <Link to="/contact" className="flex items-center">
           Contact us
@@ -189,7 +189,7 @@ const Base = ({title, description, children}) => {
         
         <div className="my-2 h-3 bg-brand -mx-10 hidden md:block" />
         <div className="-mt-1 -mb-5 h-7 bg-brandBlue -mx-10 hidden md:flex flex-wrap items-center justify-center">
-        <div className="hidden text-white hover:opacity-50 lg:block">{navList}</div>
+        <div className="hidden text-white lg:block">{navList}</div>
         </div>
 
         <Collapse open={openNav} className='bg-opacity-100'>
