@@ -189,7 +189,7 @@ const Base = ({title, description, children}) => {
         
         <div className="my-2 h-3 bg-brand -mx-10 hidden md:block" />
         <div className="-mt-1 -mb-5 h-7 bg-brandBlue -mx-10 hidden md:flex flex-wrap items-center justify-center">
-        <div className="hidden text-white lg:block">{navList}</div>
+        <div className="hidden text-white hover:opacity-50 lg:block">{navList}</div>
         </div>
 
         <Collapse open={openNav} className='bg-opacity-100'>
