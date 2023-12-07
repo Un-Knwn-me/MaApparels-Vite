@@ -13,14 +13,22 @@ import welcome from '../assets/images/welcome.jpg';
 import infra from '../assets/images/infra.jpg';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
-import img1 from '../assets/images/Factory mob.jpg';
+import img1 from '../assets/images/Factory.jpg';
+import img1Mob from '../assets/images/Factory mob.jpg';
 import img2 from '../assets/images/Women 2x.jpg';
+import img2Mob from '../assets/images/Women Mobile.jpg';
 import img3 from '../assets/images/Boys 2x (1).jpg';
+import img3Mob from '../assets/images/Boys Mobile.jpg';
 import img4 from '../assets/images/Girls jpg hq.jpg';
+import img4Mob from '../assets/images/Girls Mobile.jpg';
 import img5 from '../assets/images/Women 2.jpg';
+import img5Mob from '../assets/images/Womens Mobile.jpg';
 import img6 from '../assets/images/Infants 2x.jpg';
+import img6Mob from '../assets/images/Infant Mobile.jpg';
 import img7 from '../assets/images/Girls 2x.jpg';
+import img7Mob from '../assets/images/Girls 2 Mobile.jpg';
 import img8 from '../assets/images/Boys 2x.jpg';
+import img8Mob from '../assets/images/boys2 Mobile.jpg';
 import client from '../assets/images/client.svg';
 import clientMob from '../assets/images/clientMob.svg';
 import wdc from '../assets/images/Certification/WDC.png';
@@ -37,6 +45,7 @@ const Home = () => {
     <>
     <Base>
     <div className='corusel'>
+      <div className='hidden md:block'>
      <Swiper
       modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
       centeredSlides={true}
@@ -125,6 +134,96 @@ const Home = () => {
         </Paper>
       </SwiperSlide>
     </Swiper>
+    </div>
+    <div className='block md:hidden'>
+    <Swiper
+      modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+      centeredSlides={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+      }}
+      loop={true}
+      spaceBetween={10}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      // scrollbar={{ draggable: true }}
+    >
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img1Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img2Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img3Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img4Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img5Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img6Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img7Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Paper elevation={0}>
+        <img
+          src={img8Mob}
+          alt='MA Apparels'
+          style={{ width: '100%', display: 'block' }}
+        />
+        </Paper>
+      </SwiperSlide>
+    </Swiper>
+    </div>
     </div>
     
     <Paper elevation={0} sx={{ backgroundColor: '#F40B4B', width: '100%', height: '5px', mb: 0.5, display: { xs:'none', sm: 'none', md: 'block' }, borderRadius: 0 }}/>
