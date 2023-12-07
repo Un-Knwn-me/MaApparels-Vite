@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import { useEffect } from 'react';
 import Home from './pages/Home.jsx';
 import Csr from './pages/Csr.jsx'
 import About from './pages/About.jsx'
@@ -12,6 +13,16 @@ import Girls from './pages/Girls.jsx';
 import Infants from './pages/Infants.jsx';
 
 function App() {
+
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+        event.preventDefault();
+    };
+    window.addEventListener('contextmenu', handleContextMenu);
+    return () => {
+        window.removeEventListener('contextmenu', handleContextMenu);
+    };
+}, []);
 
   return (
     <Routes>
