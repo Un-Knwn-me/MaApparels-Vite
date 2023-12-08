@@ -26,7 +26,7 @@ const SITEMAP = [
   },
   {
     title: "Our Units",
-    links: [{name: "Naveena Apparels"}, {name: "Sealink Fashion (P) LTD"}],
+    links: [{name: "Naveena Apparels", nav: '#'}, {name: "Sealink Fashion (P) LTD", nav: '#'}],
   },
 ];
  
