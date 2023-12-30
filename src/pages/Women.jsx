@@ -61,7 +61,6 @@ const Womens = () => {
                       <CardActionArea onClick={() => handleClickOpen(index)}>
                         <CardMedia
                           component="img"
-                          height="300"
                           src={image}
                           alt={`Image ${index}`}
                         />
