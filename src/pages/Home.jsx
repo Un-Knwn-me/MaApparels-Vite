@@ -9,7 +9,7 @@ import women from '../assets/images/Women/044.jpg';
 import mens from '../assets/images/05.jpg';
 import infant from '../assets/images/Infants/09.jpg';
 import { Link, useNavigate } from 'react-router-dom';
-import welcome from '../assets/images/welcome.jpg';
+import welcome from '../assets/images/welcome3.jpg';
 import infra from '../assets/images/infra.jpg';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
@@ -524,7 +524,7 @@ const Home = () => {
            
             {counterOn && 
             <Typography variant='bullet' sx={{ fontSize: '24px' }}>
-              <CountUp start={0} end={10000} duration={2} delay={0} />
+              <CountUp start={0} end={50000} duration={2} delay={0} />
             </Typography>}             
             <Typography variant='bullet' sx={{ fontSize: '18px', m: 1 }}>
              pcs/day
@@ -539,7 +539,7 @@ const Home = () => {
             
             {counterOn && 
             <Typography variant='bullet' sx={{ fontSize: '24px' }}>
-              <CountUp start={0} end={1000} duration={2} delay={0} />
+              <CountUp start={0} end={400} duration={2} delay={0} />
             </Typography>}
             <Typography variant="h4" sx={{ fontSize: '20px', mt: 2 }}>
               No of Machinery
@@ -551,7 +551,7 @@ const Home = () => {
 
             {counterOn && 
             <Typography sx={{ fontSize: '24px' }} variant='bullet'>
-              <CountUp start={0} end={1050} duration={2} delay={0} />
+              <CountUp start={0} end={900} duration={2} delay={0} />
             </Typography>}
             <Typography variant="h4" sx={{ fontSize: '20px', mt: 2 }}>
               Skilled Workers
