@@ -67,7 +67,7 @@
   }
   
   .about {
-    background-image: url('./assets/images/aboutbg.png'), linear-gradient(lightgray 0px 1.36px, #FFF);
+    background-image: url('./assets/images/aboutbg.avif'), linear-gradient(lightgray 0px 1.36px, #FFF);
     background-size: 100% 102.097%, auto;
     background-repeat: no-repeat, no-repeat;
     background-position: top center, top center;
