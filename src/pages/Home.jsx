@@ -563,10 +563,10 @@ const Home = () => {
             
             {counterOn && 
             <Typography sx={{ fontSize: '24px' }} variant='bullet'>
-              <CountUp start={0} end={2} duration={2} delay={0} />
+              <CountUp start={0} end={15} duration={2} delay={0} /> +
             </Typography>}
             <Typography variant="h4" sx={{ fontSize: '20px', mt: 2 }}>
-              No of Units
+              Years of Experience
             </Typography>
           </Box>
         </Grid>
