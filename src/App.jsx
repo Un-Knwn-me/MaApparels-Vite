@@ -32,6 +32,10 @@ function App() {
           name="description"
           content="Explore the latest trends in clothing with Ma Apparels. High-quality fashion for women, men, kids and infant."
         />
+        <meta
+          name="keywords"
+          content="maapparels, maapparels.in, maapparels.com, ma apparels, Export Garments in Tirupur, Garments Manufacturer in tirupur , Export Garments , Garments Manufacturer"
+        />
       </Helmet>
 
       <Routes>

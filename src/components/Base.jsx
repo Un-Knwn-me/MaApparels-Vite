@@ -229,7 +229,9 @@ const Base = ({title, description, children}) => {
       variant="h6"
       className="mb-4 font-bold text-footerText uppercase"
     >
-      {title}
+      <Link to='/contact'>
+        {title}
+      </Link>
     </Typography>
     <ul className="space-y-1">
       {links.map((link, linkKey) => (
