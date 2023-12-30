@@ -62,7 +62,7 @@ const Womens = () => {
                         <CardMedia
                           component="img"
                           src={image}
-                          alt={`Image ${index}`}
+                          alt={`Women's Fashion - Image ${index}`}
                         />
                         <div
                           style={{

@@ -71,7 +71,7 @@ const Men = () => {
                           component="img"
                           height="300"
                           src={image}
-                          alt={`Image ${index}`}
+                          alt={`Men's Fashion - Image ${index}`}
                         />
                         <div
                           style={{

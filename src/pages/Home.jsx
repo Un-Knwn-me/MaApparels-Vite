@@ -249,11 +249,15 @@ const Home = () => {
 
         <Grid item xs={12} md={6} lg={6} sx={{ my: 2, }}>
         <Slide direction="right">
-        <Typography style={{ fontWeight: 'bold', fontFamily: 'poppins', fontSize: '32px', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, ml: 3 }} variant='bullet'>Welcome to MA Apparels</Typography>         
-        <Typography variant='body2' style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, mt:3, ml: 3 }}>
+        <Typography style={{ fontWeight: 'bold', fontFamily: 'poppins', fontSize: '32px', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, ml: 3 }} variant='h1'>Welcome to MA Apparels</Typography>         
+        <Typography variant='body1' style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, mt:3, ml: 3 }}>
+          Ma Apparels is a leading garments manufacturer specializing in the production and export of high-quality garments.
+        </Typography>
+
+        <Typography variant='body2' style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }} sx={{ mr: 3, mt:2, ml: 3 }}>
                 We offer an exclusive range of knitted garments, kids knitted garments, ladies knitted garments and men's knitted garments. The garments are made from superior quality materials and are very durable.
         </Typography>
-        <Typography variant='body2' sx={{ mr: 3, mt: 3, ml: 3 }} style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }}>
+        <Typography variant='body2' sx={{ mr: 3, mt: 2, ml: 3 }} style={{ fontSize: '15px', fontFamily: 'poppins', justifyContent: 'center', display: 'flex', color: '#0D003F' }}>
                 We are always abreast with the latest fashion trends and thus we are the first choice when it comes to fashion and good quality. Incepted in the year 1995, we “MA Apparels” is  one of our group of companies, which is a highly acclaimed name in the knitted garment industry. Our valuable industry experience as well as availability of technically advanced machinery equipment has helped us to deliver an exquisite range of knitted garments that are known for their styles, colors and innovative patterns.
         </Typography>
         <div style={{ textAlign: 'center', marginTop: '25px' }}>
