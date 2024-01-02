@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Navbar, Collapse, Typography, IconButton, Chip, SpeedDial, SpeedDialHandler, SpeedDialContent, } from "@material-tailwind/react";
 import logo from '../assets/MA-1.png';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
@@ -34,13 +34,24 @@ const currentYear = new Date().getFullYear();
 
 const Base = ({title, description, children}) => {
   const [openNav, setOpenNav] = useState(false);
- 
+  const location = useLocation();
+
   useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
-    );
-  }, []);
+    // Scroll to top
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+
+    // Window resize
+    const handleResize = () => {
+      if (window.innerWidth >= 960) {
+        setOpenNav(false);
+      }
+    };
+  
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [location, setOpenNav]);
  
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">

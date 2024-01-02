@@ -22,6 +22,8 @@ const Contact = () => {
       .then((result) => {
           console.log(result.text);
           toast.success('Message Sent Successfully');
+          form.current.reset();
+          setVerified(false);
       }, (error) => {
           console.log(error.text);
           toast.error('Error Sending Message');
