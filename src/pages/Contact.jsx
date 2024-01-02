@@ -18,7 +18,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(`${process.env.REACT_APP_YOUR_SERVICE_ID}`, `${process.env.REACT_APP_YOUR_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_YOUR_PUBLIC_KEY}`)
+    emailjs.sendForm(`${import.meta.env.VITE_APP_EMAIL_SERVICE_ID}`, `${import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_APP_EMAIL_PUBLIC_KEY}`)
       .then((result) => {
           console.log(result.text);
           toast.success('Message Sent Successfully');
