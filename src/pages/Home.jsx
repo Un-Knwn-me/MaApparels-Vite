@@ -4,10 +4,10 @@ import { Box, Button, Card, CardActionArea, CardMedia, Grid, Paper, Typography }
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import SendIcon from '@mui/icons-material/Send';
-const Kids = import('../assets/images/Girls/10.jpg');
-const women = import('../assets/images/Women/044.jpg');
-const mens = import('../assets/images/05.jpg');
-const infant = import('../assets/images/Infants/09.jpg');
+import Kids from '../assets/images/Girls/10.jpg';
+import women from '../assets/images/Women/044.jpg';
+import mens from '../assets/images/05.jpg';
+import infant from '../assets/images/Infants/09.jpg';
 import { Link, useNavigate } from 'react-router-dom';
 import welcome from '../assets/images/welcome3.jpg';
 import infra from '../assets/images/infra.jpg';
