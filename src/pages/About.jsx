@@ -243,7 +243,7 @@ encompasses the following varieties.
     </Container>
     
     <Grid item sx={{ m: 5 }} xs={12} md={12} lg={12}>
-    <Typography variant='bullet' className='logopic' style={{ fontWeight: 'bold', fontSize: '30px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
+    <Typography variant='bullet' style={{ fontWeight: 'bold', fontSize: '30px', justifyContent: 'center', display: 'flex', color: '#2F4858' }}>
         OUR CLIENTS
     </Typography>
     </Grid>
