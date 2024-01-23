@@ -45,7 +45,7 @@ const Men = () => {
   return (
     <Base>
       <div className="product">
-        <Container>
+        <Container sx={{ pb: 10 }}>
           <Grid container spacing={3} sx={{ pt: 5 }}>
             <Grid sx={{ mt: -3, mb: 2 }} item xs={12} md={12} lg={12}>
               <Typography

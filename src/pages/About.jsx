@@ -248,7 +248,7 @@ encompasses the following varieties.
     </Typography>
     </Grid>
     
-    <Box sx={{ px: 5, pb: 5, display: { xs: 'none', md: 'flex' } }}>
+    <Box sx={{ px: 5, pb: 10, display: { xs: 'none', md: 'flex' } }}>
 <img
     src={client} 
     alt='Client'

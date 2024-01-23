@@ -81,7 +81,7 @@ const Contact = () => {
   />
 </Paper>
 
-<Container sx={{ pt: 10, mt: -3, pb: 5 }}>
+<Container sx={{ pt: 10, mt: -3, pb: 10 }}>
   <Grid container spacing={1}>
 
     <Grid item xs={12} md={6} lg={6} >

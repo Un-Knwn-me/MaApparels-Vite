@@ -29,7 +29,7 @@ const Csr = () => {
 
 {/* Content CSR */}
 <Container>
-        <Grid container spacing={3} sx={{ p: 5 }}>
+        <Grid container spacing={3} sx={{ p: 10 }}>
         <Grid sx={{ mt:-3, mb: 2 }} item xs={12} md={12} lg={12}>
         <Typography style={{ fontWeight: 'bold', fontSize: '28px', justifyContent: 'center', display: 'flex', color: '#2F4858' }} variant='bullet'>OUR SOCIAL RESPONSIBILITIES</Typography>
         </Grid>
