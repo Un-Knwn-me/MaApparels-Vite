@@ -329,7 +329,7 @@ const Home = () => {
       <Grid container spacing={3}>
       <Grid item xs={12} md={3} lg={3}>
         <Card sx={{ maxWidth: '100%', transition: 'transform 0.2s', '&:hover': { transform: 'scale(0.95)' } }}>
-      <CardActionArea onClick={()=> navigate('/women')}>
+      <CardActionArea onClick={()=> navigate('/women/casual')}>
         <CardMedia
           component="img"
           height="400"
